@@ -1,0 +1,9 @@
+package lec07Scanner;
+
+public class ScannerClass {
+	public static void main(String[] args) {
+		System.out.println("Please print your name here: ");
+		Scanner scanner = new sca
+				}
+
+}

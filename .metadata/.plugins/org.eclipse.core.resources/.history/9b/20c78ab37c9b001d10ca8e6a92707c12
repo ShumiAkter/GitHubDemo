@@ -1,0 +1,7 @@
+package hw6IfElseCondition02;
+
+public class Temperature {
+public static void main(String[] args) {
+	System.out.println("Temperature");
+}
+}

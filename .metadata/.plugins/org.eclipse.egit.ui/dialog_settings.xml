@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel" value="0"/>
+	<list key="EGit.KnownHosts">
+		<item value="git.eclipse.org"/>
+		<item value="bitbucket.org"/>
+		<item value="github.com"/>
+	</list>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/January-2023-QA-Bootcamp/CoreJavaJanuary2023.git"/>
+		<item value="https://github.com/July-2022-QA-Bootcamp/CoreJava.git"/>
+	</list>
+	<section name="GitImportWizard">
+		<item key="GitProjectsImportPage.STORE_NESTED_PROJECTS" value="true"/>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.pull.PullResultDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="203"/>
+		<item key="DIALOG_Y_ORIGIN" value="154"/>
+		<item key="DIALOG_WIDTH" value="626"/>
+		<item key="DIALOG_HEIGHT" value="390"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+</section>

@@ -1,0 +1,43 @@
+package BaseUtil;
+
+import java.time.Duration;
+
+import javax.swing.plaf.basic.BasicInternalFrameTitlePane.MaximizeAction;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
+import Pages.HomePage;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class BaseClass {
+
+	
+	
+	WebDriver driver;
+	protected HomePage homePage;
+	
+	
+@BeforeMethod
+	public void setup() {
+//System.setProperty(" webdriver.chrome.driver", "/Users/shumiakter/eclipse-workspace/gov.portal.cms/driver/chromedriver");
+WebDriverManager.chromedriver().setup();	
+driver = new ChromeDriver();
+driver.manage().window().maximize();
+driver.manage().deleteAllCookies();
+driver.get("https://portal.cms.gov/portal/ ");
+driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+//webDriver will wait 20 second to load the page and then it will through exception
+//But if the loading is done before 20 seconds, it will go to the next level
+homePage =new HomePage(driver);
+	}
+	@AfterMethod
+	public void tearUp() {
+		driver.quit();
+	}
+
+	
+	
+}

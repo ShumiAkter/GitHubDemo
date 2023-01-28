@@ -1,0 +1,8 @@
+package scanner;
+
+public class ScannerClass {
+	public static void main(String[] args) {
+		System.out.println("Please print your name here: ");
+	}
+
+}

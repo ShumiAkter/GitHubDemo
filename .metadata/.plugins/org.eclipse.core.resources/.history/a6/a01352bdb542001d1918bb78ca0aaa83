@@ -1,0 +1,26 @@
+package lec14_condition_statement;
+
+import java.util.Scanner;
+
+public class Compare11 {
+	public static void main(String[] args) {
+		System.out.println("Please ");
+		Scanner scanner= new Scanner(System.in);
+		int age= scanner.nextInt();
+		int weight= scanner.nextInt();
+		
+		if (age>=18) {
+			if(weight>50) {
+				System.out.println("You are eligible to donate blood ");
+			}else {
+				System.out.println("You are not eligible to donate blood");
+			}
+			System.out.println("You are ");
+		}else {
+			System.out.println("you age shlould be more than 18 or equal to 18 to donate blood ");
+		}
+				
+		scanner.close();
+	}
+
+}

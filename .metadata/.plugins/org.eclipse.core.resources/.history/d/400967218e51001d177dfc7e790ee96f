@@ -1,0 +1,24 @@
+package test;
+
+import org.testng.annotations.Test;
+
+import BaseUtil.BaseClass;
+
+public class HomePageTest extends BaseClass {
+	//if enabled is true, the test case will be run
+	@ Test(enabled = true)
+	public void logotest() {
+		homePage.logoDisplayed();
+	}
+	
+	@Test(enabled = true)
+	public void clickUerIdFieldTest() { 
+		homePage.clickUserIdField();
+	}
+	@Test(enabled = true)
+	public void loginBottomTest() {
+		homePage.loginBottomClicked();
+		
+	}
+
+}

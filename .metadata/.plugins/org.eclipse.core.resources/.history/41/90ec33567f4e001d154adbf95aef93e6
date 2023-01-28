@@ -1,0 +1,17 @@
+package BaseUtil;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeMethod;
+
+public class BaseClass {
+	WebDriver driver;
+	
+	@BeforeMethod
+	public void setup() {
+		System.setProperty("webDriver chrome.driver", "location: /Users/shumiakter/eclipse-workspace/gov.portal.cms/driver/chromedriver")
+		
+	}
+	
+	
+
+}

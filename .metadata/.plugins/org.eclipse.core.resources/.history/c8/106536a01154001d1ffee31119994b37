@@ -1,0 +1,22 @@
+package Test;
+
+
+import org.testng.annotations.Test;
+
+import base.BaseClass;
+
+public class HomePageTest extends BaseClass{
+
+	
+	@Test(enabled = false)
+	public void logoTest() {
+		homePage.logDisplayed();
+	}
+	@Test
+	public void clickUserIdFieldTest() throws InterruptedException {
+		homePage.clickUserIdField();
+
+	}
+
+
+}

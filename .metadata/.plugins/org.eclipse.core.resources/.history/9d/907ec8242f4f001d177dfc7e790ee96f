@@ -1,0 +1,29 @@
+package BaseUtil;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
+import Pages.HomePage;
+
+public class BaseClass {
+	WebDriver driver;
+	protected HomePage homePage;
+	
+	@BeforeMethod
+	public void setup() {
+System.setProperty(" webdriver.chrome.driver", "C:  /Users/shumiakter/eclipse-workspace/gov.portal.cms/driver/chromedriver");
+driver= new ChromeDriver();
+homePage =new HomePage(driver);
+driver.get("https://portal.cms.gov/portal/ ");
+
+	}
+	@AfterMethod
+	public void tearUp() {
+		driver.quit();
+	}
+
+	
+
+}

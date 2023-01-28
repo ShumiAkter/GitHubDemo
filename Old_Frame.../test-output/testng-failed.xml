@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="Test.HomePageTest">
+        <methods>
+          <include name="use_of_scroll_down_and_scroll_up_action"/>
+          <include name="terarUp"/>
+          <include name="use_of_explicty_wait_in_Mountsonai"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Test.HomePageTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

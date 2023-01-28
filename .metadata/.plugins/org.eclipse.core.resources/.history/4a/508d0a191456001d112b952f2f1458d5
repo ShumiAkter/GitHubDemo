@@ -1,0 +1,28 @@
+package Test;
+
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+import com.github.dockerjava.api.model.Driver;
+
+import base.BaseClass;
+
+public class HomePageTest extends BaseClass{
+
+	
+	@Test
+	public void logoTest() {
+		homePage.logDisplayed();
+	}
+	@Test
+	public void clickUserIdFieldTest()  {
+		driver.get("https://www.riteaid.com/login");
+		driver.findElement(By.xpath("//input[@id='login-email-address' and @class='form__input'])")).click();
+		
+		homePage.clickUserIdField();
+
+	}
+
+
+}

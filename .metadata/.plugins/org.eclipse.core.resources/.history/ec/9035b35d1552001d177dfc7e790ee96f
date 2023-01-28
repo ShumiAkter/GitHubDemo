@@ -1,0 +1,53 @@
+package Pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+
+import com.fasterxml.jackson.databind.node.BooleanNode;
+
+public class HomePage {
+WebDriver driver;
+
+	public HomePage(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements( driver, this);
+	}
+	//xpath locator
+	@FindBy (xpath = "//em[@id='cms-homepage-header-logo-unauth' and @class=\"cms-icon cms-sprite-loggedout ms-3']")
+	 WebElement logo;
+	
+	@FindBy(xpath="//input[@id='cms-login-userId']")
+	WebElement userId;
+	//id attribute
+	@FindBy(id ="cms-login-submit")
+	WebElement loginBottom;
+	//second way to do method
+	By forgotUserId = By.id("cms-forgot-userid");
+	//3d way
+	@FindBy (how = How.ID,using ="cms-forgot-password")
+	WebElement forgotPassword;
+	
+	public boolean logoDisplayed() {
+		Boolean flag= logo.isDisplayed();
+	System.out .println("The logo is displyed "+flag);
+		return flag;
+	}
+	public void clickUserIdField() {
+		userId.click();
+	}
+	
+	public void loginBottomClicked() throws InterruptedException {
+		Thread.sleep(5000);
+		loginBottom.click();
+		Thread.sleep(5000);
+	}
+	public void forgotPasswordClicked() throws InterruptedException {
+		forgotPassword.click();
+		Thread.sleep(4000);
+		
+	}
+}

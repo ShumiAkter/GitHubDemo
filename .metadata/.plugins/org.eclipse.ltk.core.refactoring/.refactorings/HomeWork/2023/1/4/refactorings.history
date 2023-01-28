@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;hw6IfElseCondition01.Vote&apos; to &apos;Voter&apos;&#x0A;- Original project: &apos;HomeWork&apos;&#x0A;- Original element: &apos;hw6IfElseCondition01.Vote&apos;&#x0A;- Renamed element: &apos;hw6IfElseCondition01.Voter&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Vote&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;hw6IfElseCondition01{Vote.java[Vote" matchStrategy="1" name="Voter" qualified="false" references="true" similarDeclarations="false" stamp="1674504197016" textual="false" version="1.0"/>
+</session>

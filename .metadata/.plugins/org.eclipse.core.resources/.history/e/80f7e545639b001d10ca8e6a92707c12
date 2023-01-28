@@ -1,0 +1,14 @@
+package hw6IfElseCondition01;
+
+public class Voter {
+	public static void main(String[] args) {
+		int age = 70;
+		
+		if (age==18) {
+			System.out.println("");
+			
+		}
+		
+	}
+
+}

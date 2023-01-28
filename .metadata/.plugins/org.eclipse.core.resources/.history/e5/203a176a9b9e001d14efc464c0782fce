@@ -1,0 +1,31 @@
+package hw7UseOfNestedIf;
+
+import java.util.Scanner;
+
+import javax.swing.text.html.HTMLDocument.HTMLReader.IsindexAction;
+
+public class DiabeticCondition {
+	public static void main(String[] args) {
+		System.out.println("Please Enter your Hemolobin A1C value below");
+		Scanner scanner = new Scanner(System.in);
+		Double hbA1c = scanner.nextDouble();
+
+// Now write some conditions. a) If your  hbA1c value is more than 6.4, the outcome will be "I am a diabetic patient". b) If your  hbA1c value is not more than 6.4, Congratulation! you are not diabetic. Now introduce the nested if condition below. if  hbA1c >= 5.7,  the outcome will be "I am a pre-diabetic patient". if  hbA1c < 5.7,  the outcome will be "I am a healthy person". 
+		
+		if (hbA1c > 6.4) {
+			System.out.println("I am a diabetic patient");	
+	}else {
+		if(hbA1c>= 5.7) {
+			System.out.println("I am a pre-diabetic patient");
+			
+				
+			}else if (hbA1c<5.7) {
+				System.out.println("I am a healthy person");
+		}
+		scanner.close();
+	}
+		
+		
+	}
+		
+}

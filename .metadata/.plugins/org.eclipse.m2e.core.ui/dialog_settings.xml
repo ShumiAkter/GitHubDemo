@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="/Users/shumiakter/eclipse-workspace/FirstTestMaven/src/test/java/test/HomePageTest.java"/>
+			<item value="/Users/shumiakter/eclipse-workspace/FirstTestMaven/src/main/java/BaseUtil/BaseClass.java"/>
+			<item value="/Users/shumiakter/eclipse-workspace/gov.portal.cms"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.geico.July"/>
+			<item value="gov.portal.cms1"/>
+			<item value="com.riteaid"/>
+			<item value="nyp.org.brooklyn"/>
+			<item value="FirstTestMaven"/>
+			<item value="org.mountsinai"/>
+		</list>
+		<list key="name">
+			<item value="Geico Insurence"/>
+			<item value="Portal CMS Framework"/>
+			<item value="This is Riteaid frame work"/>
+			<item value="This Framework is for Methodis Hospital"/>
+			<item value="lolololol"/>
+			<item value="Mountsinai Automation FrameWork"/>
+		</list>
+		<list key="artifactId">
+			<item value="July2022geico"/>
+			<item value="gov.portal.cms1"/>
+			<item value="com.riteaid"/>
+			<item value="nyp.org.brooklyn"/>
+			<item value="FirstTestMaven"/>
+			<item value="org.mountsinai"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

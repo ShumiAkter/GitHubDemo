@@ -1,0 +1,22 @@
+package Test;
+
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+import com.github.dockerjava.api.model.Driver;
+
+import base.BaseClass;
+
+public class HomePageTest extends BaseClass{
+
+	
+	@Test
+	public void logoTest() {
+		homePage.logDisplayed();
+	
+	
+	}
+
+
+}

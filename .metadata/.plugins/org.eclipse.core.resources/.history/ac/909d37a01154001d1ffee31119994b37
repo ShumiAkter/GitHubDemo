@@ -1,0 +1,40 @@
+package Page;
+
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+
+public class HomePage {
+	WebDriver driver;
+
+	public HomePage(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements( driver,this);
+		
+	}
+	
+	@FindBy(xpath = "//em[@class='ra-icon ra-icon-cx-ra-logo']")
+	WebElement logo;
+	
+	@FindBy(xpath = "//input[@id='login-email']")
+	WebElement userId;
+	
+
+	
+	public boolean logDisplayed() {
+		boolean shu = logo.isDisplayed();
+		System.out.println("The logo is Displayed " + shu);
+		return shu;
+	
+	}
+	public void clickUserIdField() throws InterruptedException {
+		Thread.sleep(200);
+		userId.click();
+		
+		
+	}
+
+}

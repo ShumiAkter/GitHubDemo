@@ -1,0 +1,11 @@
+package lec07Scanner;
+
+public class Loop {
+	public static void main(String[] args) {
+		int n = 2;
+		for (int i = 25; i < 10; i -= 3) {
+			System.out.println(i + n);
+		}
+	}
+
+}

@@ -1,0 +1,35 @@
+package test;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+import BaseUtil.BaseClass;
+
+public class HomePageTest extends BaseClass {
+	WebDriver driver;
+	//if enabled is true, the test case will be run
+	@ Test(enabled = false, priority = 1)
+	public void logotest() {
+		homePage.logoDisplayed();
+	}
+	
+	@Test(enabled = false, priority = 3)
+	public void clickUerIdFieldTest() { 
+		homePage.clickUserIdField();
+	}
+	@Test(enabled = false, priority = 2)
+	public void loginBottomTest() throws InterruptedException { 
+		homePage.loginBottomClicked();
+		
+	}
+	@Test(enabled = false)
+	public void forgotpasswordTest() throws InterruptedException {
+		homePage.forgotPasswordClicked();
+	}
+	@Test(enabled = true)
+	public void newUserRegistrationBottomClickTest() {
+		driver.findElement(By.xpath("//a[text()='New User Registration']")).click();
+	}
+
+}

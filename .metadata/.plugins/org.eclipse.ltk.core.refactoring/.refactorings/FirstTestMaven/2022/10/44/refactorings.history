@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Copy element &apos;chromedriver&apos; to &apos;driver&apos;&#x0A;- Original project: &apos;FirstTestMaven&apos;&#x0A;- Destination element: &apos;driver&apos;&#x0A;- Original element: &apos;chromedriver&apos;" description="Copy file" element1="driver/chromedriver" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1666612730504" target="/com.riteaid/driver" units="0" version="1.0"/>&#x0A;&#x0A;&#x0A;</session>

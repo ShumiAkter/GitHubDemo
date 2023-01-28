@@ -1,0 +1,28 @@
+package Basee;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
+import Page.HomePage;
+
+public class BseeClass {
+	WebDriver driver;
+	protected HomePage homePage;
+
+	@BeforeMethod
+	public void setup() {
+		System.setProperty("webdriver.chrome.driver",
+				"/Users/shumiakter/eclipse-workspace/gov.portal.cms1/driver/chromedriver");
+		driver = new ChromeDriver();
+		driver.get("https://portal.cms.gov/portal/");
+		homePage = new HomePage(driver);
+
+	}
+
+	@AfterMethod
+	public void terarUp() {
+		driver.quit();
+	}
+}

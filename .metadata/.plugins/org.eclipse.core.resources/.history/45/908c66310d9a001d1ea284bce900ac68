@@ -1,0 +1,5 @@
+package Scanner;
+
+public class ScannerClass {
+
+}
